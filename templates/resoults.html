@@ -1,0 +1,65 @@
+{% include 'header.html' %}
+
+{% include 'search.html' %}
+
+    <div class="container">
+        <div class="row text-center">
+            <h2>
+                Wyniki dla hasła: <strong>{{search_term}}</strong>
+            </h2>
+        </div>
+        <div>
+            <p>
+                {% if interest_len == 0 %}
+                <div class="row text-center">
+                    <div class="col">
+                        <p> Brak wyników dla podanej frazy</p>
+                    </div>                    
+                </div>
+                {% else %}
+                <div class="table-responsive">
+                    <table class="container table table-sm table-hover align-middle">
+                        <colgroup>
+                            <col class="col">
+                            <col class="col">
+                            <col class="col">
+                            <col class="col">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Zainteresowanie</th>
+                                <th>Globalna grupa odbiorców</th>
+                                <th>Temat</th>
+                                <th>Klasyfikacja</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in data %}
+                                <tr>    
+                                    <td>{{ item["order"] }}</td>
+                                    <td>{{ item["name"] }}</td>
+                                    <td>{{ item["size"] }}</td>
+                                    {% if "topic" in item %}
+                                        <td>{{ item["topic"] }}</td>
+                                    {% else %}
+                                        <td>-</td>
+                                    {% endif %}
+                                    <td>
+                                        <ol>
+                                            <li>{{item["path"][-3] }}</li>
+                                            <li>{{item["path"][-2] }}</li>
+                                            <li>{{item["path"][-1] }}</li>
+                                        </ol>
+                                        </td> 
+                                <tr>
+                            {% endfor %}                        
+                        </tbody>
+                    </table>
+                </div>
+                {% endif %}
+            </p>    
+        </div>
+    </div>
+
+    {% include 'footer.html' %}

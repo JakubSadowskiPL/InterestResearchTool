@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "id": "6003076016339",
+            "name": "Marketing poczt\u0105 elektroniczn\u0105",
+            "audience_size": 16955044,
+            "path": [
+                "Zainteresowania",
+                "Biznes i przemys\u0142",
+                "W Internecie",
+                "Marketing poczt\u0105 elektroniczn\u0105"
+            ],
+            "description": "",
+            "topic": "Business and industry"
+        },
+        {
+            "id": "6006831589651",
+            "name": "Email service provider (marketing)",
+            "audience_size": 6830,
+            "path": [
+                "Zainteresowania",
+                "Dodatkowe zainteresowania",
+                "Email service provider (marketing)"
+            ],
+            "description": null,
+            "topic": "Technology"
+        }
+    ]
+}

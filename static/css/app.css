@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400&display=swap");
+body {
+  background: #F4F5F5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #fff;
+}
+
+nav {
+  list-style: none;
+}
+
+h1 {
+  font-size: 58px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 42px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 34px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.page-header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+.hero-search {
+  padding: 0;
+}
+
+.hero-search__body {
+  background: #020024;
+  background: linear-gradient(146deg, #020024 0%, #093079 100%);
+  height: 60vh;
+  min-height: 200px;
+}
+
+.hero-search__hedline {
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero-search__tagline {
+  color: #fff;
+}
+
+.hero-search__button {
+  color: #fff;
+  background: #6495ED;
+}
+
+.hero-search__button:hover {
+  color: #fff;
+  background: #1E2D24;
+}
+
+.intro__headline {
+  padding: 50px;
+}
+
+.build-with__images--img {
+  height: 100px;
+  width: auto;
+}
+
+/*# sourceMappingURL=app.css.map */

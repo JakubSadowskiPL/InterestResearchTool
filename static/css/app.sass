@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400&display=swap')
+
+// backgrounds
+$primary-background: #F4F5F5
+$secondary-background: rgb(2,0,36)
+$gradient-background: linear-gradient(146deg, rgba(2,0,36,1) 0%, rgba(9,48,121,1) 100%)
+$transparent-background: rgba(0, 0, 0, 0)
+
+// fonts
+$heading-font: 'Oswald', sans-serif
+$paragraph-font: 'Open Sans', sans-serif
+
+// font weights & size
+$regular-font-weight: 400
+$light-font-weight: 300
+$base-font-size: 18px
+$heading-scale: 8
+ 
+// font colors
+$primary-color: #1E2D24
+$socondary-color: #fff
+
+// button backgrounds
+$primary-button-background: #6495ED
+$socondary-button-background: #1E2D24
+
+// body
+body
+    background: $primary-background
+    font-family: $paragraph-font
+    font-size: $base-font-size
+
+a
+    text-decoration: none
+    opacity: 0.75
+    color: $socondary-color
+
+nav
+    list-style: none
+
+@for $i from 1 through 6
+  h#{$i}
+    font-size: $base-font-size + $heading-scale * (6 - $i)
+    font-family: $heading-font
+    font-weight: $light-font-weight
+
+//page-header
+
+.page-header
+    position: absolute
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 35px 100px 0
+    background: $transparent-background
+    z-index: 1
+    color: $socondary-color
+
+header nav
+    display: flex
+    margin-right: -15px
+
+header nav li
+    margin: 0 15px
+
+// hero - search  
+.hero-search
+    padding: 0
+
+.hero-search__body
+    background: $secondary-background
+    background: $gradient-background
+    height: 60vh
+    min-height: 200px
+
+.hero-search__hedline
+    color: $socondary-color
+    font-weight: $regular-font-weight
+
+.hero-search__tagline
+    color: $socondary-color
+
+
+.hero-search__button
+    color: $socondary-color
+    background: $primary-button-background
+
+.hero-search__button:hover
+    color: $socondary-color
+    background: $socondary-button-background
+
+// intro
+
+.intro__headline
+    padding: 50px
+
+
+// build with
+
+.build-with__images--img
+    height: 100px
+    width: auto
