@@ -1,6 +1,6 @@
-from flask import Flask,render_template,url_for,request,render_template_string
-import urllib3
-import pyfacebook
+from flask import Flask,render_template,request
+# import urllib3
+# import pyfacebook
 import requests
 import json
 from json2html import *
