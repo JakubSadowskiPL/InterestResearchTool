@@ -1,4 +1,4 @@
-<div class="container-fluid hero-search">
+<section class="container-fluid hero-search">
     <div class="d-flex align-items-center flex-column justify-content-center hero-search__body">
         <div class="row">
             <div class="row">
@@ -14,26 +14,25 @@
                     </p>
                 </div>
             </div>
-            <form method="POST" action="{{url_for('resoults')}}" class="hero-search__form">
-                <div class="row d-flex justify-content-center">    
-                    <div class="col-11 col-lg-7">
-                        <input name="search_term" type="text" class="form-control" placeholder="Jaki temat Cię interesuje?">
+            <div class="row d-flex justify-content-center">
+                <form method="POST" action="{{url_for('resoults')}}" class="hero-search__form">
+                    <div class="col hero-search__input">
+                        <input name="search_term" type="text" class="form-control hero-search__input--phrase" placeholder="What interests your target group?">
                     </div>
-                    <div class="col-11 col-lg-3">
-                        <select name="lang" class="form-select">
+                    <div class="col hero-search__input">
+                        <select name="lang" class="form-select hero-search__input--language">
                             <option value="en_US">English (US)</option>
                             <option value="pl_PL">Polish</option>
                             <option value="ru_RU">Russien</option>
-                            <option value="de_DE">German</option>
-                        </select>
+                            <option value="de_DE">German</option>                            </select>
                     </div>
-                    <div class="col-11 col-lg-2">
+                    <div class="col">
                         <button type="submit" class="btn hero-search__button">
                             Explore
                         </button>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
+</section>

@@ -97,6 +97,10 @@ header nav li {
   color: #fff;
 }
 
+.hero-search__input {
+  padding: 10px;
+}
+
 .hero-search__button {
   color: #fff;
   background: #6495ED;
