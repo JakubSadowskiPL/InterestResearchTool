@@ -14,9 +14,9 @@
                     </p>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center">
-                <form method="POST" action="{{url_for('resoults')}}" class="hero-search__form">
-                    <div class="col hero-search__input">
+            <form method="POST" action="{{url_for('resoults')}}" class="hero-search__form">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-8 hero-search__input">
                         <input name="search_term" type="text" class="form-control hero-search__input--phrase" placeholder="What interests your target group?">
                     </div>
                     <div class="col hero-search__input">
@@ -24,15 +24,16 @@
                             <option value="en_US">English (US)</option>
                             <option value="pl_PL">Polish</option>
                             <option value="ru_RU">Russien</option>
-                            <option value="de_DE">German</option>                            </select>
+                            <option value="de_DE">German</option>                            
+                        </select>
                     </div>
                     <div class="col">
                         <button type="submit" class="btn hero-search__button">
                             Explore
                         </button>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 </section>

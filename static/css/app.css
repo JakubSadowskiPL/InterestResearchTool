@@ -79,8 +79,8 @@ header nav li {
 .hero-search__body {
   background: #020024;
   background: linear-gradient(146deg, #020024 0%, #093079 100%);
-  height: 60vh;
-  min-height: 200px;
+  height: 80vh;
+  min-height: 500px;
 }
 
 .hero-search__fb {
