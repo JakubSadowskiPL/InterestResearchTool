@@ -83,6 +83,11 @@ header nav li {
   min-height: 200px;
 }
 
+.hero-search__fb {
+  color: #fff;
+  font-weight: 400;
+}
+
 .hero-search__hedline {
   color: #fff;
   font-weight: 400;
