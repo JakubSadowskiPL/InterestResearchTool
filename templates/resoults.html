@@ -5,14 +5,14 @@
     <div class="container">
         <div class="row text-center">
             <h2>
-                Wyniki dla hasła: <strong>{{search_term}}</strong>
+                Resoults for: <strong>{{search_term}}</strong>
             </h2>
         </div>
         <div>
             <p>
                 {% if interest_len == 0 %}
                 <div class="row text-center">
-                    <div class="col">
+                    <div class="col text-center">
                         <p> Brak wyników dla podanej frazy</p>
                     </div>                    
                 </div>
@@ -28,10 +28,10 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Zainteresowanie</th>
-                                <th>Globalna grupa odbiorców</th>
-                                <th>Temat</th>
-                                <th>Klasyfikacja</th>
+                                <th>Interest</th>
+                                <th>Audience size (globally)</th>
+                                <th>Topic</th>
+                                <th>Path</th>
                             </tr>
                         </thead>
                         <tbody>
